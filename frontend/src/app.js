@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import { Component } from 'react'
 
 export default class App extends Component {
 
@@ -7,10 +7,6 @@ export default class App extends Component {
       <div>
         {this.props.children}
       </div>
-    );
+    )
   }
 }
-
-App.propTypes = {
-  children: PropTypes.node,
-};

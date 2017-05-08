@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import { Component } from 'react'
 
 export default class TemplatePage extends Component {
 
@@ -11,13 +11,8 @@ export default class TemplatePage extends Component {
     return (
       <div>
         <h1>Hi there!</h1>
-        {this.props.content}
+        {content}
       </div>
-    );
+    )
   }
 }
-
-TemplatePage.propTypes = {
-  content: PropTypes.string.isRequired,
-  fetchContent: PropTypes.func.isRequired
-};
