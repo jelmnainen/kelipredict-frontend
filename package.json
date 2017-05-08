@@ -24,7 +24,7 @@
     "react": "*",
     "react-redux": "*",
     "react-router": "*",
-    "react-router-dom": "^4.1.1",
+    "react-router-dom": "*",
     "redux": "*",
     "redux-promise-middleware": "*",
     "redux-thunk": "*"
