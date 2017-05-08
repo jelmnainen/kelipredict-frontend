@@ -1,17 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class TemplatePage extends Component {
-
-  componentWillMount() {
-    this.props.fetchContent()
-  }
-
-  render() {
-    const { content } = this.props
-    return (
-      <div>
-        {content}
-      </div>
-    )
-  }
+const TemplatePage = ({ content, fetchContent }) => {
+  fetchContent()
+  return (
+    <div>
+      {content}
+    </div>
+  )
 }
+
+export default TemplatePage

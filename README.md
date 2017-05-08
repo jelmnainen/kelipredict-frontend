@@ -1,4 +1,9 @@
-# Uutisposti-webpage
-Uutisposti KY's 2017 webpages.
+# react-bootstrap
+Emblica's take on React bootstrap
 
-All rights reserved to Uutisposti KY.
+## npm
+All the package versions use \*. To start, run
+```
+npm update --save && npm update --save-dev
+```
+to install latest versions and save those to package.json.
