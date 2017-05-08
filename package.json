@@ -1,15 +1,15 @@
 {
-  "name": "Uutisposti-webpage",
-  "version": "0.0.1",
-  "description": "Uutisposti KY's 2017 webpage",
+  "name": "Emblica React Bootstrap",
+  "version": "0.1.0",
+  "description": "Emblica's take on React Bootstrap",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "webpack --watch",
     "dev": "concurrently --kill-others 'webpack --watch' 'node server/startup.js'"
   },
-  "author": "Johannes Elmnäinen <johannes@elmnainen.fi>",
-  "license": "UNLICENSED",
+  "author": "Teemu Heikkilä <teemu@emblica.fi>, Johannes Elmnäinen <johannes@emblica.fi>",
+  "license": "MIT",
   "babel": {
     "presets": [
       "es2015"
