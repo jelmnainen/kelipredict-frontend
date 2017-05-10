@@ -8,6 +8,7 @@ import Template from './containers/templateContainer'
 import App from './app'
 import { store, eventbus } from './store'
 import bind_actors from './actors'
+import css from '../static/app.scss'
 bind_actors(eventbus)
 
 class AppRouter extends Component {
