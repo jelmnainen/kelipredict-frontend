@@ -1,5 +1,5 @@
 {
-  "name": "Emblica React Bootstrap",
+  "name": "emblica-react-bootstrap",
   "version": "0.1.0",
   "description": "Emblica's take on React Bootstrap",
   "main": "server.js",
