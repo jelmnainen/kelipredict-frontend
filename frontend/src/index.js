@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route } from 'react-router-dom'
 
-import Template from './containers/templateContainer'
+import Frontpage from './containers/frontpageContainer'
 import App from './app'
 import { store, eventbus } from './store'
 import bind_actors from './actors'
@@ -17,7 +17,7 @@ class AppRouter extends Component {
       <Provider store={store}>
         <BrowserRouter>
           <App>
-            <Route exact path="/" component={Template} />
+            <Route exact path="/" component={Frontpage} />
           </App>
        </BrowserRouter>
       </Provider>

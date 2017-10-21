@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import template from './templateReducer'
+import frontpage from './frontpageDuck'
 
 const rootReducer = combineReducers({
-  template
+  frontpage
 })
 
 export default rootReducer
