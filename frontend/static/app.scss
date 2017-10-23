@@ -2,5 +2,98 @@
 
 body {
   background-color: $background-color;
+  font-family: $bulk-font;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
   color: $hilight-color;
+}
+
+.masthead {
+  font-size: 6.5em;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $header-font;
+  padding: 5% 0;
+}
+
+.frontpage-content {
+  height: 20%;
+}
+
+.frontpage-links {
+  height: 40%;
+}
+
+.explanation-text {
+  padding: 0 20%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.prediction {
+  padding-left: 0.3em;
+  font-weight: bold;
+}
+
+.prediction-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.prediction-card {
+  width: 10%;
+  text-align: center;
+  margin: 0.2rem;
+  padding: 0.1rem;
+  font-family: $bulk-font;
+}
+
+.card-good {
+  border: 1px solid $teal;
+}
+
+.card-average {
+  border: 1px solid $dark-beige;
+}
+
+.card-bad {
+  border: 1px solid $red;
+}
+
+.prediction-good {
+  font-weight: bold;
+  color: $teal;
+}
+
+.prediction-average {
+  font-weight: bold;
+  color: $dark-beige;
+}
+
+.prediction-bad {
+  font-weight: bold;
+  color: $red;
+}
+
+.message {
+  background-color: $teal;
+  color: $white;
+  font-weight: bold;
+  margin: 0 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }

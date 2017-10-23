@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import frontpage from './frontpageDuck'
+import weather from './weatherDuck'
 
 const rootReducer = combineReducers({
-  frontpage
+  weather
 })
 
 export default rootReducer
