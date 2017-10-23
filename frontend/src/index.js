@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 import Frontpage from './containers/frontpageContainer'
+import Story from './components/Story'
 import App from './app'
 import { store, eventbus } from './store'
 import bind_actors from './actors'
@@ -18,6 +19,7 @@ class AppRouter extends Component {
         <BrowserRouter>
           <App>
             <Route exact path="/" component={Frontpage} />
+            <Route path="/story" component={Story} />
           </App>
        </BrowserRouter>
       </Provider>

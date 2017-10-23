@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 import Messages from './Messages'
 import ForecastDisplay from './ForecastDisplay'
@@ -26,17 +26,11 @@ class Frontpage extends React.Component {
           </div>
           <ForecastDisplay forecast={this.props.forecast} />
           <div className="row frontpage-links">
-            {/* <div className="col-sm-6">
-
+            <div className="col-sm-12">
               <Link to='/story'>
-                A short explanation
+                What is this and how does it work
               </Link>
-            </div> */}
-            {/* <Link to='/blog'>
-              <div className="col-sm-6">
-                A long explanation
-              </div>
-            </Link> */}
+            </div>
         </div>
       </div>
     </div>
