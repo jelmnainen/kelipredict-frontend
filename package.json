@@ -18,6 +18,8 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "emotion": "^8.0.9",
     "express": "^4.16.2",
     "express-history-api-fallback": "^2.2.1",
     "moment": "^2.19.1",
@@ -26,6 +28,7 @@
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-spinners": "^0.1.9",
     "redux": "^3.7.2",
     "redux-promise-middleware": "^4.4.1",
     "redux-thunk": "^2.2.0"

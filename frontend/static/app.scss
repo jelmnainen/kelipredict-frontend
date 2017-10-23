@@ -37,6 +37,8 @@ p {
 
 .frontpage-content {
   height: 20%;
+  justify-content: center;
+  align-items: center;
 }
 
 .frontpage-links {
@@ -119,4 +121,10 @@ p {
 .story h4 {
   text-align: center;
   padding: 0 0 3%;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

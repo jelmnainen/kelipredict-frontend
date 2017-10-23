@@ -24,7 +24,7 @@ class Frontpage extends React.Component {
               </p>
             </div>
           </div>
-          <ForecastDisplay forecast={this.props.forecast} />
+          <ForecastDisplay forecast={this.props.forecast} fetching={this.props.fetching} />
           <div className="row frontpage-links">
             <div className="col-sm-12">
               <Link to='/story'>

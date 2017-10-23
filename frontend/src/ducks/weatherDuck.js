@@ -9,16 +9,25 @@ export const fetchWeatherData = () => ({
 })
 
 const defaultState = {
+  fetching: false,
   forecast: [],
   messages: [],
 }
 
 const frontpageReducer = (state = defaultState, action) => {
   switch (action.type) {
+    case `${FETCH_WEATHER}_PENDING`:
+      return R.assoc('fetching', true, state)
     case `${FETCH_WEATHER}_FULFILLED`:
-      return R.assoc('forecast', action.payload, state)
+      return R.pipe(
+        R.assoc('forecast', action.payload),
+        R.assoc('fetching', false)
+      )(state)
     case `${FETCH_WEATHER}_REJECTED`:
-      return R.assoc('messages', ['Fetching weather data failed, please reload'], state)
+      return R.pipe(
+        R.assoc('messages', ['Fetching weather data failed, please reload']),
+        R.assoc('fetching', false)
+      )(state)
     default:
       return state
   }

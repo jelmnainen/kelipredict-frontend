@@ -6,6 +6,7 @@ import { fetchWeatherData } from '../ducks/weatherDuck'
 const mapStateToProps = (state) => ({
   forecast: state.weather.forecast,
   messages: state.weather.messages,
+  fetching: state.weather.fetching,
 })
 
 const mapDispatchToProps = (dispatch) => ({
